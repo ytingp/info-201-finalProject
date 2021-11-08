@@ -20,7 +20,7 @@
 ## **Finding Data**
 **Dataset 1:**
 
-**Where did you download the data (e.g., a web URL)?**
+**Where did you download the data (e.g., a web URL)?**<br>
 https://www.kaggle.com/bryanb/valorant-tweets 
 
 **How was the data collected or generated? Make sure to explain who collected the data (not necessarily the same people that host the data), and who or what the data is about?**<br>
