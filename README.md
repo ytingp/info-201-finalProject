@@ -1,8 +1,8 @@
-## **Domain of Interest** 
+## **Domain of Interest: Valorant** 
 
 **Why are you interested in this field/domain?** 
 
-We to play video games.
+We to play video games. We hope to use these data to gain a better understanding of the game.
 
 **What other examples of data-driven projects have you found related to this domain (share at least 3)?**
 - blitz.gg 
