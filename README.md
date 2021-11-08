@@ -8,6 +8,8 @@ What other examples of data-driven projects have you found related to this domai
 - tracker.gg
 - valking.gg
 - https://www.instagram.com/valorant.stats/?utm_medium=copy_link 
+
+
 What data-driven questions do you hope to answer about this domain (share at least 3)?  
 
 - How many people are in each rank?
@@ -18,7 +20,7 @@ What data-driven questions do you hope to answer about this domain (share at lea
  
  
 ## **Finding Data**
-### **Dataset 1:**
+###**Dataset 1:**
 **Where did you download the data (e.g., a web URL)?**
 https://www.kaggle.com/bryanb/valorant-tweets 
 
@@ -35,7 +37,7 @@ BryanB from Kaggle.com scraped the data using tweeter API and are from the offic
 “How popular is Valorant?“
 
 
-**### Dataset 2:**
+###**Dataset 2:**
 **Where did you download the data (e.g., a web URL)?**
 https://www.kaggle.com/aadhavvignesh/valorant-weapon-stats 
 
@@ -51,7 +53,7 @@ There are 15 columns.
 **What questions (from above) can be answered using the data in this dataset?**  
 “How many weapons are capable of one-shotting someone?”
 
-**### Dataset 3:**
+###**Dataset 3:**
 **Where did you download the data (e.g., a web URL)?**
 https://www.kaggle.com/jaykumar1607/valorant-masters-2021-player-map-data 
 
