@@ -1,16 +1,16 @@
 ## **Domain of Interest: Valorant** 
 
-Why are you interested in this field/domain?  
+**Why are you interested in this field/domain?**  
 We like playing video games. 
 
-What other examples of data-driven projects have you found related to this domain (share at least 3)?  
+**What other examples of data-driven projects have you found related to this domain (share at least 3)?**
 - blitz.gg 
 - tracker.gg
 - valking.gg
 - https://www.instagram.com/valorant.stats/?utm_medium=copy_link 
 
 
-What data-driven questions do you hope to answer about this domain (share at least 3)?  
+**What data-driven questions do you hope to answer about this domain (share at least 3)?**  
 
 - How many people are in each rank?
 - What maps are being picked?
@@ -25,7 +25,7 @@ What data-driven questions do you hope to answer about this domain (share at lea
 **Where did you download the data (e.g., a web URL)?**
 https://www.kaggle.com/bryanb/valorant-tweets 
 
-**How was the data collected or generated? Make sure to explain who collected the data (not necessarily the same people that host the data), and who or what the data is about?**
+**How was the data collected or generated? Make sure to explain who collected the data (not necessarily the same people that host the data), and who or what the data is about?**<br>
 BryanB from Kaggle.com scraped the data using tweeter API and are from the official VALORANT Twitter account (@playVALORANT) and also from tweets mentioning this account. The data is on in
 
 **How many observations (rows) are in your data?** 
@@ -43,7 +43,7 @@ BryanB from Kaggle.com scraped the data using tweeter API and are from the offic
 **Where did you download the data (e.g., a web URL)?**
 https://www.kaggle.com/aadhavvignesh/valorant-weapon-stats 
 
-**How was the data collected or generated? Make sure to explain who collected the data (not necessarily the same people that host the data), and who or what the data is about?**
+**How was the data collected or generated? Make sure to explain who collected the data (not necessarily the same people that host the data), and who or what the data is about?** <br>
 Kaggle user Aadhav Vignesh collected the data from blitz.gg. This file contains the different guns in Valorant and the damage they do to different parts of the body.
 
 **How many observations (rows) are in your data?**
@@ -60,7 +60,7 @@ There are 15 columns.
 **Where did you download the data (e.g., a web URL)?**
 https://www.kaggle.com/jaykumar1607/valorant-masters-2021-player-map-data 
 
-**How was the data collected or generated? Make sure to explain who collected the data (not necessarily the same people that host the data), and who or what the data is about?**
+**How was the data collected or generated? Make sure to explain who collected the data (not necessarily the same people that host the data), and who or what the data is about?** <br>
 Kaggle user Jay collected the data from liquipedia.net. This file contains the different map picks throughout each day of the Valorant Masters 2021 tournament. 
 
 **How many observations (rows) are in your data?**
