@@ -2,7 +2,8 @@
 
 **Why are you interested in this field/domain?**<br>  We like playing video games. 
 
-**What other examples of data-driven projects have you found related to this domain (share at least 3)?**<br>- blitz.gg 
+**What other examples of data-driven projects have you found related to this domain (share at least 3)?**<br>
+- blitz.gg 
 - tracker.gg
 - valking.gg
 - https://www.instagram.com/valorant.stats/?utm_medium=copy_link 
