@@ -2,7 +2,7 @@
 
 **Why are you interested in this field/domain?** 
 
-We like playing video games. 
+We to play video games.
 
 **What other examples of data-driven projects have you found related to this domain (share at least 3)?**
 - blitz.gg 
