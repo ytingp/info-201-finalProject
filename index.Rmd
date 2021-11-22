@@ -11,27 +11,38 @@ source("analysis2.R")
 source("analysis3.R")
 source("analysis7.R")
 source("analysisSummaryInfo.R")
+source("analysisTable.R")
 knitr::opts_chunk$set(echo = TRUE)
 
 ```
 
-##**Introduction**
+## Introduction
 Twitch is a popular streaming platform that focus on broadcasting video games and even e-sports competition. We are interested in answering questions like
 what are the most watched games on Twitch, what is the relationship between a 
 streamer's watch time and their follower count, what are people's behavior like
 in chat, and etc. By looking at these data, we hope to gain a better understanding of Twitch overall as an entertainment media. 
 
 
-##**Summary**
-In 2021, the game that was streamed the most by streamers was **`r Most_streamer_game`**, although the most popular category that people watched was **'r top_game`**. This shows that although Twitch was meant to be a video game streaming platform, recently, people has found "in real life" streams to be entertaining as well. 
+## Summary
+In 2021, the game that was streamed the most by streamers was **`r Most_streamer_game`**, although the most popular category that people watched was **`r top_game`**. This shows that although Twitch was meant to be a video game streaming platform, recently, people has found "in real life" streams to be entertaining as well. In the past year the most popular streamer who has the most watch time from their viewers was **`r Most_popular_streamer`.** 
 
-##**Table**
+We also measured the emote frequency in a sample Twitch chat from the streamer 
+HealthyGamer_GG, who hosts streams aimed at improving mental health in the 
+gaming community. In our sample chat, at least **`r percent_emotes`%**
+of the chat messages contained an emote (based on 10 popular emotes alone). 
+Additonally, the frequency of messages containing an emotes was at least
+**`r emote_rate` per minute**, or about 1 emote message every 2 seconds.
 
+## Table
+```{r table, echo=FALSE}
+#View(table)
+```
 
 
 ```{r scatter, echo=FALSE}
 plot(scatter)
 ```
+<br>
 The **purpose** of the scatterplot chart is to be able to visualize the direct relationship between the watch time (in minutes) to the total amount of followers for each channel/streamer. The chart allowed us to gain the **insight** that the amount of followers does not necessarily affect the watch time of the viewers. There are some channels that reach really long watch times but will much less followers compared to the other channels.
 
 ```{r chart, echo=FALSE}
@@ -39,17 +50,25 @@ plot(chart)
 ```
 <br>
 The **purpose** of this chart is to answer the question of what games do people like to watch on Twitch in 2021. The **insight** that we gained is that
-Just Chatting is the most popular category that people watch while Grand Theft
-Auto V and League of Legends takes second and third respectively. 
+_Just Chatting_ is the most popular category that people watch while 
+_Grand Theft Auto V_ and _League of Legends_ 
+takes second and third respectively. 
 
 ```{r games_plot, echo=FALSE}
 plot(games_plot)
 ```
-The purpose of this chart is to answer the question of what games people like to watch on Twitch and how consistently. The insight we gained is that Just Chatting seems to be consistently the most popular over the whole year, while games like GTA 5 and League of Legends have spikes in popularity, perhaps because of game-related events and updates.
+<br>
+The purpose of this chart is to answer the question of what games people like 
+to watch on Twitch and how consistently. 
+The insight we gained is that _Just Chatting_ seems to be consistently 
+the most popular over the whole year, while games like 
+_GTA 5_ and _League of Legends_ have spikes in popularity, 
+perhaps because of game-related events and updates.
 
 ```{r pie_chart, echo=FALSE}
 plot(pie_chart)
 ```
+<br>
 The **purpose** of this chart is to answer the question of 
 what emotes people like to use on Twitch. The **insight** we gained is that Pog variations are the most popular emote, followed by LUL variations and <3 (heart). Pog, LUL, and KEKW are Twitch emote staples. Because this particular sample chat was taken from an interview stream where someone shared their tragic backstory, there may have been more hearts than usual to show extra support.
 

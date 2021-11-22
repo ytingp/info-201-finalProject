@@ -7,7 +7,6 @@
 
 # load libraries and data
 library(tidyverse)
-library(scales)
 chat <- read.csv("healthygamer_gg_testdata.csv")
 
 # notice! some messages beginning with : like :D are broken
@@ -84,9 +83,6 @@ top_5_data <- head(emote_sums_tall, 5)
 
 # present as Bar Chart, Table, Pie Chart (if bar is taken)
 
-bar_plot <- ggplot(data = top_5_data) +
-  geom_col(mapping = aes(x = emote, y = messages))
-
 pie_chart <-ggplot(top_5_data, 
                    aes(x = "", y = messages, fill = emote)) +
             geom_bar(stat = "identity", width = 1, color = "white") +
@@ -98,7 +94,6 @@ pie_chart <-ggplot(top_5_data,
             geom_text(
               aes(y = messages/2 + c(0, cumsum(messages)[-length(messages)]), 
                 label = c(421, 521, 482, 360, 469)))
-                  # percent(c(421, 469, 360, 482, 521) / total_emotes_sample)))
 
   
 

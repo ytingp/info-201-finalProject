@@ -1,8 +1,9 @@
-install.packages("readxl")
+# install.packages("readxl")
 library("readxl")
 library("stringr")
 library(dplyr)
-my_data <- read_excel(file.choose("twitchdata-update.xlsx"))
+# my_data <- read_excel(file.choose("twitchdata-update.xlsx"))
+my_data <- read.csv("twitchdata-update.csv")
 
 table <- matrix(c(6196161750,3246298,"English",6091677300,5310163,"English",
                   5644590915,1767635,"Portuguese",3970318140,1767635,"English",
@@ -12,4 +13,4 @@ colnames(table) <- c("Watch Time","Followers", "Language")
 rownames(table) <- c("xQcOW","summit1g","Gaules", "ESL_CSGO", "Tfue", "Asmongold", 
                      "NICKMERCS", "Fextralife", "loltyler1")
 
-View(table)
+# View(table)
