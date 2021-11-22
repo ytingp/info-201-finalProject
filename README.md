@@ -31,7 +31,7 @@ A Kaggle.com user by the name of Aayush Mishra got his data from the website kno
 “Who is the top streamer on twitch from last year?”
 
 
-**### Dataset 2:**
+### **Dataset 2:**
 **Where did you download the data (e.g., a web URL)?**
 https://www.kaggle.com/mowglii/twitch-chat-test-data
 **How was the data collected or generated? Make sure to explain who collected the data (not necessarily the same people that host the data), and who or what the data is about?**
@@ -43,7 +43,7 @@ There are 4 columns.
 **What questions (from above) can be answered using the data in this dataset?**  
 “What Twitch emotes are popular?”
 
-**### Dataset 3:**
+### **Dataset 3:**
 **Where did you download the data (e.g., a web URL)?**
 https://www.kaggle.com/rankirsh/evolution-of-top-games-on-twitch 
 
