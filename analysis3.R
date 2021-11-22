@@ -2,7 +2,7 @@ library("readxl")
 library(ggplot2)
 library("stringr")
 library(dplyr)
-my_data <- read_excel(file.choose("twitchdata-update.xlsx"))
+my_data <- read.csv("twitchdata-update.csv")
 
 scatter <- ggplot(my_data) +
   geom_point(mapping = aes(x = watch_time, y = Followers, color = watch_time)) +

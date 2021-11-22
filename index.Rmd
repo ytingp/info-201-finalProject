@@ -9,6 +9,7 @@ output: html_document
 source("analysis1.R")
 source("analysis2.R")
 source("analysis3.R")
+source("analysis7.R")
 source("analysisSummaryInfo.R")
 knitr::opts_chunk$set(echo = TRUE)
 
