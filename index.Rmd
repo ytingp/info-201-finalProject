@@ -1,0 +1,22 @@
+---
+title: "Exploratory Analysis"
+author: "Yin Ting, Ryan, Aaron"
+date: "11/22/2021"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+source("analysis2.R")
+knitr::opts_chunk$set(echo = TRUE)
+
+```
+
+
+```{r chart, echo=FALSE}
+plot(chart)
+```
+<br>
+The **purpose** of this chart is to answer the questino of what games do people like to watch on Twitch in 2021. The **insight** that we gained is that
+Just Chatting is the most popular category that people watch while Grand Theft
+Auto V and League of Legends takes second and third respectively. 
+
