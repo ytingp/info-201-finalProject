@@ -1,7 +1,7 @@
 ## **Domain of Interest: Twitch Gaming** 
 
 **Why are you interested in this field/domain?**  <br>
-We like playing video games. <br>  <br>
+We like playing video games and are Twitch users. We would like to find out some trends that are on Twitch. <br>  <br>
 **What other examples of data-driven projects have you found related to this domain (share at least 3)? And summarize them.** <br>
 https://towardsdatascience.com/insights-from-visualizing-public-data-on-twitch-a73304a1b3eb <br>
 This is a visualization of the size and the relationship between the different streamer communities. The size of the node is based on the number of views they get, and the thickness of the line increases which indicates the number of viewers that are overlapped between the streamer. The color of the node shows the type of community they are in. <br>
@@ -19,39 +19,39 @@ Who is the top streamer on twitch from last year?<br>
 
 ## **Finding Data**
 ### **Dataset 1:**
-**Where did you download the data (e.g., a web URL)?**
-https://www.kaggle.com/aayushmishra1512/twitchdata
-**How was the data collected or generated? Make sure to explain who collected the data (not necessarily the same people that host the data), and who or what the data is about?**
-A Kaggle.com user by the name of Aayush Mishra got his data from the website known as sullygnome.com. The data is essentially about the top 1000 streamers on twitch over the past year. 
-**How many observations (rows) are in your data?** 
-1000
-**How many features (columns) are in the data?**
-11
-**What questions (from above) can be answered using the data in this dataset?**
-“Who is the top streamer on twitch from last year?”
+**Where did you download the data (e.g., a web URL)?** <br>
+https://www.kaggle.com/aayushmishra1512/twitchdata <br>
+**How was the data collected or generated? Make sure to explain who collected the data (not necessarily the same people that host the data), and who or what the data is about?** <br>
+A Kaggle.com user by the name of Aayush Mishra got his data from the website known as sullygnome.com. The data is essentially about the top 1000 streamers on twitch over the past year.  <br>
+**How many observations (rows) are in your data?**  <br>
+1000 <br>
+**How many features (columns) are in the data?** <br>
+11 <br>
+**What questions (from above) can be answered using the data in this dataset?**  <br>
+“Who is the top streamer on twitch from last year?” <br>
 
 
 ### **Dataset 2:**
-**Where did you download the data (e.g., a web URL)?**
-https://www.kaggle.com/mowglii/twitch-chat-test-data
-**How was the data collected or generated? Make sure to explain who collected the data (not necessarily the same people that host the data), and who or what the data is about?**
-Kaggle user mowgli collected the data from the Twitch API using the R package Rchamp. (https://github.com/mowgl-i/Rchamp). This is a log of chat messages from the channel HealthyGamer_GG including the user, channel, message, and time. 
-**How many observations (rows) are in your data?**
-There are 7730 rows.
-**How many features (columns) are in the data?**
-There are 4 columns.
-**What questions (from above) can be answered using the data in this dataset?**  
-“What Twitch emotes are popular?”
+**Where did you download the data (e.g., a web URL)?** <br>
+https://www.kaggle.com/mowglii/twitch-chat-test-data <br>
+**How was the data collected or generated? Make sure to explain who collected the data (not necessarily the same people that host the data), and who or what the data is about?** <br>
+Kaggle user mowgli collected the data from the Twitch API using the R package Rchamp. (https://github.com/mowgl-i/Rchamp). This is a log of chat messages from the channel HealthyGamer_GG including the user, channel, message, and time.  <br>
+**How many observations (rows) are in your data?** <br>
+There are 7730 rows. <br>
+**How many features (columns) are in the data?** <br>
+There are 4 columns. <br>
+**What questions (from above) can be answered using the data in this dataset?**   <br>
+“What Twitch emotes are popular?” <br>
 
-### **Dataset 3:**
-**Where did you download the data (e.g., a web URL)?**
-https://www.kaggle.com/rankirsh/evolution-of-top-games-on-twitch 
+### **Dataset 3:** <br>
+**Where did you download the data (e.g., a web URL)?** <br>
+https://www.kaggle.com/rankirsh/evolution-of-top-games-on-twitch  <br>
 
-**How was the data collected or generated? Make sure to explain who collected the data (not necessarily the same people that host the data), and who or what the data is about?**
-The user used sullygnome.com, which is a twitch analytics and statistics site, to gather their data.
-**How many observations (rows) are in your data?**
-1738
-**How many features (columns) are in the data?**
-20
-**What questions (from above) can be answered using the data in this dataset?**
-What do people like to play on Twitch?
+**How was the data collected or generated? Make sure to explain who collected the data (not necessarily the same people that host the data), and who or what the data is about?**  <br>
+The user used sullygnome.com, which is a twitch analytics and statistics site, to gather their data.  <br>
+**How many observations (rows) are in your data?** <br>
+1738 <br>
+**How many features (columns) are in the data?** <br>
+20 <br>
+**What questions (from above) can be answered using the data in this dataset?** <br>
+What do people like to play on Twitch? <br>
