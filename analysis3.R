@@ -1,4 +1,3 @@
-install.packages("readxl")
 library("readxl")
 library(ggplot2)
 library("stringr")
