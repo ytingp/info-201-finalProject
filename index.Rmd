@@ -22,6 +22,23 @@ what are the most watched games on Twitch, what is the relationship between a
 streamer's watch time and their follower count, what are people's behavior like
 in chat, and etc. By looking at these data, we hope to gain a better understanding of Twitch overall as an entertainment media. 
 
+We analyzed three datasets from Kaggle users 
+Aayush Mishra, mowgli, and Ram.Kirsh. 
+
+Kaggle user Aayush Mishra got their data from the website known as 
+sullygnome.com. 
+The data is about the top 1000 streamers on Twitch over the past year. 
+This dataset will allow us to see who the popular streamers are. 
+
+Kaggle user mowgli collected their data from the Twitch API 
+using the R package Rchamp. (https://github.com/mowgl-i/Rchamp). 
+This is a log of chat messages from the channel HealthyGamer_GG 
+including the user, channel, message, and time. 
+This dataset will allow us to analyze what Twitch users are saying.
+
+Kaggle user Ran.Kirsh used sullygnome.com, 
+a Twitch analytics and statistics site, to gather their data.
+This dataset will allow us to see what games are popular on Twitch.
 
 ## Summary
 In 2021, the game that was streamed the most by streamers was **`r Most_streamer_game`**, although the most popular category that people watched was **`r top_game`**. This shows that although Twitch was meant to be a video game streaming platform, recently, people has found "in real life" streams to be entertaining as well. In the past year the most popular streamer who has the most watch time from their viewers was **`r Most_popular_streamer`.** 
@@ -33,10 +50,21 @@ of the chat messages contained an emote (based on 10 popular emotes alone).
 Additonally, the frequency of messages containing an emotes was at least
 **`r emote_rate` per minute**, or about 1 emote message every 2 seconds.
 
-## Table
+### Top 9 Streamers 2020 by Watch Time (minutes)
 ```{r table, echo=FALSE}
-#View(table)
+library("knitr")
+kable(table)
 ```
+For our table, we grouped the data collected from the top 9 streamers 
+in the whole dataset in terms of watch time. 
+We then got the number of followers for each Channel that we selected. 
+Lastly, we included which language the streamer uses for each Channel. 
+
+Although the table shows that xQcOW is the most popular streamer by watch time,
+he does not have as many followers as some of the other top streamers, 
+suggesting that you don't need to have the most followers to have high watch time.
+And unsurprisingly, most of the top streamers 
+speak in English during their streams.
 
 
 ```{r scatter, echo=FALSE}
@@ -44,6 +72,7 @@ plot(scatter)
 ```
 <br>
 The **purpose** of the scatterplot chart is to be able to visualize the direct relationship between the watch time (in minutes) to the total amount of followers for each channel/streamer. The chart allowed us to gain the **insight** that the amount of followers does not necessarily affect the watch time of the viewers. There are some channels that reach really long watch times but will much less followers compared to the other channels.
+
 
 ```{r chart, echo=FALSE}
 plot(chart)
@@ -53,6 +82,7 @@ The **purpose** of this chart is to answer the question of what games do people 
 _Just Chatting_ is the most popular category that people watch while 
 _Grand Theft Auto V_ and _League of Legends_ 
 takes second and third respectively. 
+
 
 ```{r games_plot, echo=FALSE}
 plot(games_plot)
@@ -64,6 +94,7 @@ The insight we gained is that _Just Chatting_ seems to be consistently
 the most popular over the whole year, while games like 
 _GTA 5_ and _League of Legends_ have spikes in popularity, 
 perhaps because of game-related events and updates.
+
 
 ```{r pie_chart, echo=FALSE}
 plot(pie_chart)
