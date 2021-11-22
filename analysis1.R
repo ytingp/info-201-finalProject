@@ -7,6 +7,7 @@
 
 # load libraries and data
 library(tidyverse)
+library(scales)
 chat <- read.csv("healthygamer_gg_testdata.csv")
 
 # notice! some messages beginning with : like :D are broken
@@ -93,10 +94,11 @@ pie_chart <-ggplot(top_5_data,
             theme_void() +
             scale_fill_manual(values = 
               c("#c48ee0", "#d98768", "#fce5cd", "#f1c232", "#5d8254")) + 
-            ggtitle("Top 5 Emotes in Sample Chat") +
+            ggtitle("Emote Popularity in Sample Chat") +
             geom_text(
               aes(y = messages/2 + c(0, cumsum(messages)[-length(messages)]), 
-                label = c(421, 469, 360, 482, 521)))
+                label = c(421, 521, 482, 360, 469)))
+                  # percent(c(421, 469, 360, 482, 521) / total_emotes_sample)))
 
   
 
