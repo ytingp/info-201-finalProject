@@ -23,8 +23,31 @@ graph_2_tab <- tabPanel(
   )
 )
 
+# Input for Twitch Bar Chart
+# Create a variable `seconds input` that allows seconds 0-6188
+seconds_input <- sliderInput(
+  inputId = "seconds",
+  label = "Seconds elapsed in stream", min = 0, max = 6188, value = c(0,6188)
+)
+
+# Panel for Chat Chart tab
+plot_chat_plot <- mainPanel(
+  plotlyOutput(outputId = "barchat"),
+  seconds_input,
+  textOutput(outputId = "timestring"),
+  p(),
+  p("How often do Twitch users send emotes in the chat?"),
+  p("Using the slider, we can see down to the second 
+  when users are sending messages that include 5 popular emotes."),
+)
+
+# Tab for Chat Chart
 graph_3_tab <- tabPanel(
-  "Graph 3"
+  "Chat Chart",
+  h1("Twitch Chat Dataset"),
+  verticalLayout(
+    plot_chat_plot,
+  )
 )
 
 conclusion <- tabPanel(
