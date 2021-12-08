@@ -24,7 +24,7 @@ select_data <- games %>%
                ^Counter Strike: Global Offensive$|^Dota 2$|^Hearthstone$|
                ^Minecraft$|^Rust$", Game)) %>%
   filter(Year == "2021") %>%
-  mutate(Hours_Streamed = sub(" .*", "", Hours_Streamed)) 
+  mutate(Hours_Streamed = as.numeric(sub(" .*", "", Hours_Streamed)))
 
 
 #---Twitch Chat Data Prep
