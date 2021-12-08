@@ -6,11 +6,11 @@ library(tidyverse)
 
 # Load files
 games <- read.csv("Twitch_game_data.csv")
-# View(games)
-
 chatb <- read.csv("healthygamer_gg_testdata.csv")
 
-# Twitch Game Data Prep
+##---Stream Data Prep -> RYAN put your data filtering here
+
+#---Game Data Prep
 top_5 <- games %>%
   filter(Rank <= 5)
 
@@ -52,6 +52,9 @@ clean_chatb <- clean_chatb %>%
 
 
 # Server Functions
+
+## RYAN put server function below
+
 server <- function(input, output) {
   output$plot <- renderPlotly({
     my_graph <- ggplot(data = select_data) +
