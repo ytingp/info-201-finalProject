@@ -2,26 +2,55 @@ library(plotly)
 
 intro_tab <- tabPanel(
   "Introduction",
-  img(src = "picture.png",
-      height = 100, width = 150),
+  fluidPage(
+  includeCSS("style.css"),
+  h1("Introduction:"),
+  tags$img(src = "picture.png",
+      height = 100, width = 150, class= "center"),
   p("Twitch is a popular streaming platform that focus on broadcasting video 
     games and even e-sports competition. We will be answering the following 
     questions:"),
-##  p("1. ryan to-do"),
-  p("2. What do people like to watch on Twitch? We will answer this
-    question by looking at the viewership graph."),
-  p("3. How often do Twitch users send emotes in the chat? We will answer
-          this question by looking at the chat graph.")
+  
+  ## RYAN to-do
+  p(HTML("<strong>"),
+    "1. QUESTION?", 
+    HTML("</strong><br>"), 
+    "We will answer this question by looking at GRAPH NAME."),
+  p("This graph uses data collected by Kaggle user Ran.Kirsh. 
+    They used sullygnome.com, a Twitch analytics and statistics site, 
+    to gather their data."),
+
+  p(HTML("<strong>"),
+    "2. What do people like to watch on Twitch?", 
+    HTML("</strong><br>"),  
+    "We will answer this question by looking at the viewership graph."),
+  p("This graph uses data collected by Kaggle user Aayush Mishra.
+    They got their data from the website known as sullygnome.com. 
+    The dataset is about the top 1000 streamers on Twitch over the past year."),
+
+  p(HTML("<strong>"), 
+    "3. How often do Twitch users send emotes in the chat?", 
+    HTML("</strong><br>"),  
+    "We will answer this question by looking at the chat graph."),
+  p("This graph uses data collected by Kaggle user mowgli. 
+    They collected their data from the Twitch API using the R package Rchamp. 
+    (https://github.com/mowgl-i/Rchamp). 
+    This dataset is a log of chat messages from the channel HealthyGamer_GG.
+    HealthyGamer_GG often hosts streams aimed at improving mental health 
+    in the gaming community."),
+  )
 )
 
 
 ## RYAN: put your graph output in graph_1_tab and customize it
 graph_1_tab <- tabPanel(
-  "Graph 1"
+  "Graph 1",
+  h1("Twitch Streamers Dataset")
 )
 
 graph_2_tab <- tabPanel(
   "Viewership Graph",
+  h1("Twitch Games Dataset"),
   plotlyOutput(outputId = "plot"),
   selectInput(
     inputId = "y_axis_input",
@@ -56,17 +85,28 @@ plot_chat_plot <- mainPanel(
 # Tab for Chat Chart
 graph_3_tab <- tabPanel(
   "Chat Chart",
+  
   h1("Twitch Chat Dataset"),
   verticalLayout(
-    plot_chat_plot,
+    plot_chat_plot
   )
 )
 
 conclusion <- tabPanel(
-  "Conclusion:"
-  p("Major Takeaways:"),
-  ##  p("1. ryan to-do"),
-  p("2. What do people like to watch on Twitch? We noticed that in 2021, the 
+  "Conclusion",
+  fluidPage(
+  h1("Major Takeaways:"),
+  
+  ## Ryan to-do
+  p(HTML("<strong>"),
+    "1. QUESTION?", 
+    HTML("</strong><br>"),  
+    "PARAGRAPH."),
+  
+  p(HTML("<strong>"),
+    "2. What do people like to watch on Twitch?", 
+    HTML("</strong><br>"), 
+    "We noticed that in 2021, the 
     most populor category that was streamed was Just Chatting, which are 
     in-real-life streams where streamers are not playing video games. We also 
     noticed how even though even if a certain category is being streamed for
@@ -74,13 +114,22 @@ conclusion <- tabPanel(
     even though Call of Duty: Warzone has around the same stream time Just
     Chatting, it only has about half of Just Chatting's hours watched every 
     month."),
-  p("3. How often do Twitch users send emotes in the chat? We will answer
-          this question by looking at the chat graph.")
-)
+  
+  p(HTML("<strong>"),
+    "3. How often do Twitch users send emotes in the chat?", 
+    HTML("</strong><br>"),  
+    "Twitch users often send similar emotes together in a short span of time.
+    For example, near the beginning of the stream, many heart emotes were sent,
+    while the other emotes were not used as much yet. 
+    Surprisingly, heart was also the second most used emote after pog. 
+    Together these findings suggest that Twitch communities can stand together
+    to support the things they find important.")
+  )
 )
 
+
 ui <- navbarPage(
-  "Climate Change",
+  "Twitch Community",
   intro_tab,
   graph_1_tab,
   graph_2_tab,
