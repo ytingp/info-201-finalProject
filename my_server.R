@@ -7,8 +7,7 @@ library(tidyverse)
 # Load files
 games <- read.csv("Twitch_game_data.csv")
 chatb <- read.csv("healthygamer_gg_testdata.csv")
-
-##---Stream Data Prep -> RYAN put your data filtering here
+stream <- read.csv("twitchdata-update.csv")
 
 #---Game Data Prep
 top_5 <- games %>%
@@ -49,13 +48,24 @@ clean_chatb <- clean_chatb %>%
   ) %>%
   select(user, message, timestamp, seconds) 
 #---
-
+ 
 
 # Server Functions
-
-## RYAN put server function below
-
 server <- function(input, output) {
+  output$scatterplot <- renderPlotly({
+    plot1 <- function(plot1, x_var, y_var) {
+      scatter <- ggplot(data = plot1) +
+        geom_point(mapping = aes(x = !!as.name(x_var), y = !!as.name(y_var), color = Watch.time.Minutes.)) +
+        scale_color_continuous("Chosen Statistic") +
+        labs(
+          title = "Most Recent Data on the Top Streamer",
+          x = x_var, y = y_var
+        ) 
+      ggplotly(scatter)
+    }
+    return(plot1(stream, input$x_var, input$y_var))
+  })
+  
   output$plot <- renderPlotly({
     my_graph <- ggplot(data = select_data) +
       geom_line(mapping = aes(x = Month, y = !!as.name(input$y_axis_input),

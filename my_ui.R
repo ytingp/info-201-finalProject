@@ -11,11 +11,11 @@ intro_tab <- tabPanel(
     games and even e-sports competition. We will be answering the following 
     questions:"),
   
-  ## RYAN to-do
+  ## Introduction Page RYAN to-do
   p(HTML("<strong>"),
-    "1. QUESTION?", 
+    "1. What makes xQcOW the number 1 channel on Twitch?", 
     HTML("</strong><br>"), 
-    "We will answer this question by looking at GRAPH NAME."),
+    "We will answer this question by looking at Streamer Graph."),
   p("This graph uses data collected by Kaggle user Ran.Kirsh. 
     They used sullygnome.com, a Twitch analytics and statistics site, 
     to gather their data."),
@@ -43,9 +43,32 @@ intro_tab <- tabPanel(
 
 
 ## RYAN: put your graph output in graph_1_tab and customize it
+
 graph_1_tab <- tabPanel(
-  "Graph 1",
-  h1("Twitch Streamers Dataset")
+  "Streamer Graph",
+  h1("Twitch Streamers Dataset"),
+  plotlyOutput(outputId = "scatterplot"),
+  selectInput("x_var",
+              label = "Select a statistic from xQcOW's stream",
+              choices = c(
+                "Watch time (Minutes)" = "Watch.time.Minutes.",
+                "Stream time (Minutes)" = "Stream.time.minutes.",
+                "Peak viewers" = "Peak.viewers",
+                "Average viewers" = "Average.viewers",
+                "Followers" = "Followers"
+              )
+  ),
+  
+  selectInput("y_var",
+              label = "Select another statistic from xQcOW's stream",
+              choices = c(
+                "Watch time (Minutes)" = "Watch.time.Minutes.",
+                "Stream time (Minutes)" = "Stream.time.minutes.",
+                "Peak viewers" = "Peak.viewers",
+                "Average viewers" = "Average.viewers",
+                "Followers" = "Followers"
+              )
+  )
 )
 
 graph_2_tab <- tabPanel(
@@ -114,9 +137,14 @@ conclusion <- tabPanel(
   
   ## Ryan to-do
   p(HTML("<strong>"),
-    "1. QUESTION?", 
+    "1. What makes xQcOW the number 1 channel on Twitch?", 
     HTML("</strong><br>"),  
-    "PARAGRAPH."),
+    "We figured that it would be very helpful in answering this question if we 
+    were able to compare summary statistics of the top streamer in the world 
+    right now. In other words, we wanted to figure out which statistic of the 
+    data is the reason why xQcOW is the top channel on Twitch. Through our
+    findings, the total watch time in minutes is the difference maker while the
+    follower count is not as impactful."),
   
   p(HTML("<strong>"),
     "2. What do people like to watch on Twitch?", 
