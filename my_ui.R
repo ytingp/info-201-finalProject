@@ -89,7 +89,22 @@ graph_3_tab <- tabPanel(
   h1("Twitch Chat Dataset"),
   verticalLayout(
     plot_chat_plot
-  )
+  ),
+  h4("visual emote reference: "),
+  splitLayout(
+    img(src = "heart.png", height = 100, width = 150),
+    img(src = "kekw.jpg", height = 100, width = 150),
+    img(src = "lul.jpg", height = 100, width = 150),
+    img(src = "Pogchamp.png", height = 100, width = 150),
+    img(src = "sadge.png", height = 100, width = 150)
+  ),
+  splitLayout(
+    p("heart"),
+    p("kekw"),
+    p("lul"),
+    p("pog"),
+    p("sadge"),
+  ),
 )
 
 conclusion <- tabPanel(
