@@ -55,11 +55,13 @@ server <- function(input, output) {
   output$scatterplot <- renderPlotly({
     plot1 <- function(plot1, x_var, y_var) {
       scatter <- ggplot(data = plot1) +
-        geom_point(mapping = aes(x = !!as.name(x_var), y = !!as.name(y_var), color = Watch.time.Minutes.)) +
+        geom_point(mapping = aes(x = !!as.name(x_var), y = !!as.name(y_var), 
+                                 color = Watch.time.Minutes.)) +
         scale_color_continuous("Chosen Statistic") +
         labs(
           title = "Most Recent Data on the Top Streamer",
-          x = x_var, y = y_var
+          x = gsub(".", " ", x_var, fixed=TRUE), 
+          y = gsub(".", " ", y_var, fixed=TRUE)
         ) 
       ggplotly(scatter)
     }

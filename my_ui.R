@@ -6,12 +6,12 @@ intro_tab <- tabPanel(
   includeCSS("style.css"),
   h1("Introduction:"),
   tags$img(src = "picture.png",
-      height = 100, width = 150, class= "center"),
+      height = 100, width = 100, class= "center"),
   p("Twitch is a popular streaming platform that focus on broadcasting video 
     games and even e-sports competition. We will be answering the following 
     questions:"),
   
-  ## Introduction Page RYAN to-do
+  ## Introduction Page
   p(HTML("<strong>"),
     "1. What makes xQcOW the number 1 channel on Twitch?", 
     HTML("</strong><br>"), 
@@ -40,9 +40,6 @@ intro_tab <- tabPanel(
     in the gaming community."),
   )
 )
-
-
-## RYAN: put your graph output in graph_1_tab and customize it
 
 graph_1_tab <- tabPanel(
   "Streamer Graph",
